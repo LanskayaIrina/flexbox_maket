@@ -1,0 +1,369 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #45494c;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.topSection {
+  background: url("https://bipbap.ru/wp-content/uploads/2017/08/gory20.jpg")
+    center/cover no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.topSection > section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width:100%;
+}
+.logo {
+  font-size: 1.4em;
+  margin-left: 5em;
+  color: #dde4ea;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5em;
+}
+nav > ul > li > a {
+  padding: 5px;
+  color: #dde4ea;
+}
+.download > h1 {
+  color: #fefefc;
+  font-size: 4em;
+}
+.download > p {
+  font-size: 2em;
+  color: #fefefc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.download > button,
+.email > button {
+  background-color: #2791e5;
+  border: none;
+  border-radius: 5px;
+}
+.download > button > a {
+  display: block;
+  font-size: 1.5em;
+  padding: 1.2em;
+  text-transform: uppercase;
+  color: #fefefc;
+  font-weight: bolder;
+  width: 300px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.examples {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.examples > h2,
+.features > h2,
+.opinion > h2,
+.register > h2 {
+  color: #45494c;
+  font-size: 2em;
+}
+.examples > p,
+.features > p,
+.register > p {
+  color: #45494c;
+  margin: 3em;
+  width: 90%;
+  text-align: center;
+}
+.strip {
+  width: 200px;
+  height: 2px;
+  background-color: #2791e5;
+  margin-bottom: 1em;
+}
+.images {
+  padding: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  max-width: 1200px;
+}
+.images > figure {
+  margin: 1em;
+  flex:auto;
+}
+.picture {
+  width: 400px;
+  height: 400px;
+}
+.bigPicture {
+  width: 600px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.features,
+.register {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+.items {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 5em;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  max-width: 1200px;
+  margin-left:3em;
+  margin-right:3em;
+}
+.items > section {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:auto;
+  margin-top:1em;
+}
+.items > section:nth-last-of-type(2){
+  margin-left:1em;
+  margin-right:1em;
+}
+.items > section > h4 {
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.opinion,
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.opinion > p {
+  width: 90%;
+  font-size: 1.2em;
+  padding-top: 1.5em;
+}
+.opinion > q {
+  font-size: 1em;
+  padding-top: 1.5em;
+}
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.email > input {
+  width: 450px;
+  height: 40px;
+}
+.email > input:focus {
+  outline: none;
+}
+.email > input::placeholder {
+  font-size: 1.5em;
+  padding-left: 1em;
+}
+.email > button {
+  display: block;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fefefc;
+  font-weight: bolder;
+  width: 200px;
+  height: 40px;
+  margin-left: 30px;
+}
+footer {
+  background-color: #414a4f;
+}
+footer > p {
+  color: #8ea2a6;
+  text-transform: uppercase;
+  margin-top: 0.6em;
+  width: 90%;
+  text-align: center;
+}
+.socialNet {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+.fab {
+  font-size: 1.5em;
+  color: #e7e8e9;
+  margin-bottom: 1em;
+}
+.fa-instagram,
+.fas,
+.far {
+  color: #2791e5;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+@media all and (max-width: 1145px) {
+  .picture {
+    width: 300px;
+    height: 300px;
+  }
+  .bigPicture {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media all and (max-width: 950px) {
+  .picture {
+    width: 250px;
+    height: 250px;
+  }
+  .bigPicture {
+    width: 400px;
+    height: 250px;
+  }
+}
+@media all and (max-width: 880px) {
+  .download > h1 {
+    font-size: 3em;
+  }
+}
+@media all and (max-width: 800px) {
+  .picture {
+    width: 230px;
+    height: 230px;
+  }
+  .bigPicture {
+    width: 360px;
+    height: 230px;
+  }
+  .download > button > a {
+    font-size: 1.2em;
+    width: 230px;
+  }
+}
+@media all and (max-width: 760px) {
+  .logo {
+    margin-left: 3em;
+  }
+  nav > ul {
+    margin-right: 3em;
+  }
+  .picture {
+    width: 200px;
+    height: 200px;
+  }
+  .bigPicture {
+    width: 320px;
+    height: 200px;
+  }
+    /* .items > section:nth-last-of-type(2) {
+   margin-right: 0;
+  }   */
+  .email > input {
+    width: 400px;
+  }
+  .email > button {
+    width: 170px;
+    font-size: 0.9em;
+  }
+}
+@media all and (max-width: 705px) {
+  .logo {
+    margin-left: 2.5em;
+  }
+  nav > ul {
+    margin-right: 2.5em;
+  }
+  .download > h1 {
+    font-size: 2.5em;
+  }
+  .download > p {
+    font-size: 1.5em;
+  }
+  .picture {
+    width: 100%;
+  }
+  .email > input {
+    width: 360px;
+  }
+  .email > button {
+    width: 150px;
+    font-size: 0.8em;
+  }
+}
+@media all and (max-width: 650px) {
+  .download > button > a {
+    font-size: 1em;
+    width: 200px;
+  }
+}
+@media all and (max-width: 600px) {
+  .logo {
+    margin-left: 1em;
+  }
+  nav > ul {
+    margin-right: 1em;
+  }
+  .download > h1 {
+    font-size: 2em;
+  }
+  .download > p {
+    font-size: 1.5em;
+  }
+  .email > input {
+    width: 250px;
+  }
+  .email > button {
+    width: 120px;
+    font-size: 0.7em;
+  }
+}
